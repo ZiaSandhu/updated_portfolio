@@ -1,22 +1,22 @@
 [
   {
-    "icon": "/assets/imgs/serv-img/1.png",
-    "title": "UI / UX DESIGN",
-    "description": "There are many variations of passages of available but to the majority have suffered but the into majority.        "
+    "icon": "/assets/imgs/srv-img/web-white.png",
+    "title": "Web Development",
+    "description": "Craft tailored websites from simple pages to complex applications for your unique business needs, ensuring seamless user experiences."
   },
   {
-    "icon": "/assets/imgs/serv-img/2.png",
-    "title": "WEB DEVELOPMENT",
-    "description": "There are many variations of passages of available but to the majority have suffered but the into majority."
+    "icon": "/assets/imgs/srv-img/database.png",
+    "title": "DATABASE DESIGN AND MANAGEMENT",
+    "description": "Design and manage efficient, scalable databases, handling everything from schema design to performance tuning for organized, accessible data."
   },
   {
-    "icon": "/assets/imgs/serv-img/3.png",
-    "title": "SEO / MARKETING",
-    "description": "There are many variations of passages of available but to the majority have suffered but the into majority.        "
+    "icon": "/assets/imgs/srv-img/api.png",
+    "title": "API DEVELOPMENT AND INTEGRATION",
+    "description": "Build robust APIs and integrate third-party services to enhance your app's functionality and connectivity, ensuring secure data exchange. "
   },
   {
-    "icon": "/assets/imgs/serv-img/4.png",
-    "title": "TECHNOLOGY SOLUTION",
-    "description": "There are many variations of passages of available but to the majority have suffered but the into majority.        "
+    "icon": "/assets/imgs/srv-img/hosting.png",
+    "title": "WEB HOSTING AND DEPLOYMENT",
+    "description": "Provide reliable hosting on AWS, Google Cloud, Heroku, or Vercel, ensuring secure, optimized deployments for your applications. "
   }
 ]

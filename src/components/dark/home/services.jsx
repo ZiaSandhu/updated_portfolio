@@ -1,18 +1,7 @@
 "use client"
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import data from '@/data/home/services.json';
-import { fetchDataFirebase } from '@/utils/firebase';
-function Services({data}) {
-
-  // const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const items = await fetchDataFirebase("services");
-  //     setData(items);
-  //   }
-  //   fetchData();
-  // }, []);
+function Services() {
 
   return (
     <div
@@ -22,7 +11,7 @@ function Services({data}) {
       <div className="sec-head mb-80 wow fadeInUp">
         <div className="row justify-content-center">
           <div className="col-lg-6 text-center">
-            <h6 className="sub-title opacity-7 mb-15">Our Services</h6>
+            <h6 className="sub-title opacity-7 mb-15">Services</h6>
             <h3>
               Turn Information{' '}
               <span className="main-color">Into Actionable</span> Insights
@@ -37,7 +26,7 @@ function Services({data}) {
               <span className="icon-img-70 mb-30 opacity-7">
                 <img src={item.icon} alt="" />
               </span>
-              <h6 className="text-u ls1 mb-15">{item.name}</h6>
+              <h6 className="text-u ls1 mb-15">{item.title}</h6>
               <p>{item.description}</p>
               <div className="bord-color"></div>
             </div>

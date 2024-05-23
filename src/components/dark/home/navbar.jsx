@@ -6,9 +6,9 @@ function Navbar() {
     { label: 'Services', link: '/services', scrollNav: 1 },
     { label: 'About', link: '/about', scrollNav: 2 },
     { label: 'Portfolio', link: '/portfolio', scrollNav: 3 },
-    { label: 'Price', link: '/price', scrollNav: 4 },
+    // { label: 'Price', link: '/price', scrollNav: 4 },
     { label: 'Contact', link: '/contact', scrollNav: 5 },
-    { label: 'Blog', link: '/blog', scrollNav: 6 },
+    // { label: 'Blog', link: '/blog', scrollNav: 6 },
   ];
 
   return (

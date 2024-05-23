@@ -37,17 +37,35 @@ export async function contactForm(formData){
   await addDoc(collection(db, 'contacts'), formData);
 }
 
+// export async function downloadCv() {
+//     const fileRef = ref(storage, 'Resume.pdf'); 
+//     console.log("🚀 ~ downloadCv ~ fileRef:", fileRef)
+
+//     try {
+//       const url = await getDownloadURL(fileRef);
+
+//       const link = document.createElement('a');
+//       link.href = url;
+//       link.setAttribute('download', 'ZiaUrRehman.pdf'); // Optionally set the file name
+//       link.setAttribute('target', '_blank'); // Optionally set the file name
+//       document.body.appendChild(link);
+//       link.click();
+//       document.body.removeChild(link);
+//     } catch (error) {
+//       console.error('Error downloading file:', error);
+//     }
+// }
+
 export async function downloadCv() {
-    const fileRef = ref(storage, 'Resume.pdf'); 
-    console.log("🚀 ~ downloadCv ~ fileRef:", fileRef)
+   
 
     try {
-      const url = await getDownloadURL(fileRef);
+      const url = "/assets/Zia Ur Rehman.pdf"
 
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'ZiaUrRehman.pdf'); // Optionally set the file name
-      link.setAttribute('target', '_blank'); // Optionally set the file name
+      // link.setAttribute('target', '_blank'); 
+      link.setAttribute('download', 'ZiaUrRehman.pdf');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

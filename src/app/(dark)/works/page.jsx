@@ -1,3 +1,4 @@
+"use client"
 import ProgressScroll from '@/components/Common/ProgressScroll';
 import Cursor from '@/components/Common/cusor';
 import LoadingScreen from '@/components/Common/loader';

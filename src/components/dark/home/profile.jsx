@@ -10,13 +10,13 @@ function Profile() {
               <div className="img">
                 <img src="/assets/imgs/header/profile.jpg" alt="" />
                 <span className="icon">
-                  <img src="/assets/imgs/header/icon1.png" alt="" />
+                  <img src="/assets/imgs/header/icon4.png" alt="" />
                 </span>
                 <span className="icon">
                   <img src="/assets/imgs/header/icon2.png" alt="" />
                 </span>
                 <span className="icon">
-                  <img src="/assets/imgs/header/icon4.png" alt="" />
+                  <img src="/assets/imgs/header/icon1.png" alt="" />
                 </span>
               </div>
               <div className="info text-center mt-30">
@@ -38,9 +38,9 @@ function Profile() {
         </div>
         <div className="col-lg-8 content main-bg">
           <h1>
-            Hello, I’m <span className="main-color">Zia Jutt</span>, Full Stack Developer and{' '}
+            Hello, I’m <span className="main-color">Zia</span>, Full Stack Developer and{' '}
             <span className="bord">
-             Computer Scientist <i></i>
+             Programmer <i></i>
             </span>{' '}
             Based in Pakistan.
           </h1>
@@ -65,7 +65,7 @@ function Profile() {
               <div>
                 <div className="butn-presv">
                   <button onClick={downloadCv} className="butn butn-md butn-bord radius-5 skew">
-                    <span>Dwonload C.V</span>
+                    <span>Download C.V</span>
                   </button>
                 </div>
               </div>

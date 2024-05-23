@@ -1,57 +1,42 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Nav() {
+
+  const navItems = [
+    { label: 'Home',  },
+    { label: 'Services',},
+    { label: 'About', },
+    { label: 'Portfolio', },
+    // { label: 'Price', link: '/price', scrollNav: 4 },
+    { label: 'Contact',  },
+    // { label: 'Blog', link: '/blog' },
+  ];
+
+
   return (
     <div className="nav-top pt-30 pb-30">
       <div className="container">
         <div className="row">
           <div className="col-md-4 valign">
-            <a href="/dark" className="logo icon-img-60">
-              <img src="/assets/imgs/logo-light.png" alt="" />
+            <a href="/" className=" main-color">
+             <h4>Zia Ur Rehman</h4>
             </a>
           </div>
           <div className="col-md-8">
             <div className="navbar">
               <div className="row justify-content-end rest">
-                <div className="col-lg-8 rest">
-                  <ul className="navbar-nav main-bg d-flex justify-content-end">
-                    <li className="nav-item">
-                      <a href="/dark">
-                        <span>Home</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="/dark">
-                        <span>Services</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="/dark">
-                        <span>About</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="/dark">
-                        <span>Portfolio</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="/dark">
-                        <span>Price</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="/dark">
-                        <span>Contact</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="/dark">
-                        <span>Blog</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div className="col-lg-8 rest">
+          <ul className="navbar-nav main-bg d-flex justify-content-end">
+            {navItems.map((item, index) => (
+              <li key={index} className="nav-item">
+                <Link href="/" >
+                    <span>{item.label}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
               </div>
             </div>
           </div>

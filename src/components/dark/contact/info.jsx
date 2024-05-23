@@ -20,6 +20,7 @@ function Info() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      await contactForm(input);
       toast("Your message has been deliverd. Our team will contact you asap!", {
         icon: "👏",
         style: {
@@ -28,9 +29,8 @@ function Info() {
           color: "#c8f31d",
         },
       });
-      await contactForm(input);
-      // TODO : ADD email template
       setInput({ name: "", email: "", message: "", subject: "" });
+      // TODO : ADD email template
     } catch (error) {}
   };
 

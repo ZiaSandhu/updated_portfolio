@@ -1,26 +1,16 @@
 "use client"
-import React,{useState,useEffect} from 'react';
-import { fetchDataFirebase } from '@/utils/firebase';
 
 import data from '@/data/home/works.json';
 
-function Portfolio({data}) {
-  // const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const items = await fetchDataFirebase("portfolio");
-  //     setData(items);
-  //   }
-  //   fetchData();
-  // }, []);
+function Portfolio() {
+  
 
   return (
     <div className="sec-box portfolio section-padding" data-scroll-index="3">
       <div className="sec-head mb-30">
         <div className="row">
           <div className="col-lg-6">
-            <h6 className="sub-title opacity-7 mb-15">Our Portfolio</h6>
+            <h6 className="sub-title opacity-7 mb-15">Portfolio</h6>
             <h3>
               Look at my work & <br /> give us{' '}
               <span className="main-color">your feedback</span>
@@ -53,7 +43,7 @@ function Portfolio({data}) {
             <div key={index} className="col-lg-6 items">
               <div className="item mt-50 wow fadeInUp" data-wow-delay=".2s">
                 <div className="img">
-                  <a href={item.link}>
+                  <a href={item.link} target="_blank">
                     <img src={item.thumbnail} alt="" />
                   </a>
                 </div>
@@ -61,12 +51,12 @@ function Portfolio({data}) {
                   <div>
                     <span className="tag">{item.tag}</span>
                     <h6 className="line-height-1">
-                      <a href="single-project">{item.title}</a>
+                    <a href={item.link} target="_blank">{item.title}</a>
                     </h6>
                   </div>
                   <div className="ml-auto">
                     <div className="arrow">
-                      <a href="single-project">
+                    <a href={item.link} target="_blank">
                         <svg
                           className="arrow-right"
                           xmlns="http://www.w3.org/2000/svg"

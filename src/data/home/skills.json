@@ -1,28 +1,22 @@
 [
   {
-    "photo": "/assets/imgs/resume/s1.png",
+    "photo": "/assets/imgs/skills/nodejs.png",
     "title": "Node Js",
-    "persent": "95%"
-  },
- 
-  {
-    "photo": "/assets/imgs/resume/s1.png",
-    "title": "Node Js",
-    "persent": "95%"
+    "percentage": "95%"
   },
   {
-    "photo": "/assets/imgs/resume/s2.png",
-    "title": "Development",
-    "persent": "90%"
+    "photo": "/assets/imgs/skills/cloud-database.png",
+    "title": "Database",
+    "percentage": "90%"
   },
   {
-    "photo": "/assets/imgs/resume/s3.png",
-    "title": "Graphic Design",
-    "persent": "85%"
+    "photo": "/assets/imgs/skills/flask.png",
+    "title": "Flask",
+    "percentage": "85%"
   },
   {
-    "photo": "/assets/imgs/resume/s4.png",
-    "title": "WordPress",
-    "persent": "78%"
+    "photo": "/assets/imgs/skills/reactblack.png",
+    "title": "React JS / Next JS",
+    "percentage": "95%"
   }
 ]

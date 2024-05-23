@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="pb-30 pt-30">
+    <footer className="pb-30 pt-30 position-relative">
       <div className="container">
         <div className="row">
           <div className="col-12">
