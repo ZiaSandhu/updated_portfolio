@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import {downloadCv} from '@/utils/firebase'
 function Profile() {
@@ -31,6 +32,7 @@ function Profile() {
                 <a href="https://www.linkedin.com/in/zia-ur-rehman-sandhu" target='_blank'>
                   <i className="fab fa-linkedin-in"></i>
                 </a>
+                
                
               </div>
             </div>

@@ -1,7 +1,6 @@
 "use client";
-import { contactForm } from "@/utils/firebase";
 import React, { useState } from "react";
-
+import axios from "axios";
 import { toast } from "react-toastify";
 
 function Info() {
@@ -11,7 +10,7 @@ function Info() {
     subject: "",
     message: "",
   });
-
+const [loading,setLoading] = useState(false)
   const handleChange = (e) => {
     let name = e.target.name;
     let value = e.target.value;
@@ -20,18 +19,43 @@ function Info() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await contactForm(input);
-      toast("Your message has been deliverd. Our team will contact you asap!", {
-        icon: "👏",
+      setLoading(true)
+      let {data} = await axios.post('/api/contact',input)
+      if(data.success){
+        toast("Your message has been deliverd.", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#1d1d1d",
+            color: "#c8f31d",
+          },
+        });
+        var inputData = {...input}
+        setInput({ name: "", email: "", message: "", subject: "" });
+      }
+      else{
+        toast("Something went wrong!", {
+          style: {
+            borderRadius: "10px",
+            background: "#1d1d1d",
+            color: "#c8f31d",
+          },
+        });
+      }
+    } catch (error) {
+      toast("Something went wrong!", {
         style: {
           borderRadius: "10px",
           background: "#1d1d1d",
           color: "#c8f31d",
         },
       });
-      setInput({ name: "", email: "", message: "", subject: "" });
-      // TODO : ADD email template
-    } catch (error) {}
+    }finally{
+      setLoading(false)
+    }
+
+    await axios.post('/api/sendmail',inputData)
+
   };
 
   return (
@@ -79,7 +103,7 @@ function Info() {
         </div>
         <div className="col-lg-7 valign">
           <div className="full-width wow fadeIn">
-            <form id="contact-form" method="post" action="contact.php">
+            <form onSubmit={handleSubmit}>
               <div className="messages"></div>
 
               <div className="controls row">
@@ -131,14 +155,18 @@ function Info() {
                       name="message"
                       placeholder="Message"
                       rows="4"
-                      required="required"
+                      required
                       value={input.message}
                       onChange={handleChange}
                     ></textarea>
                   </div>
                   <div className="mt-30">
-                    <button type="submit" onClick={handleSubmit}>
-                      <span className="text">Send A Message</span>
+                    <button type="submit" disabled={loading}>
+                      {!loading ? (
+                        <span className="text">Send A Message</span>
+                      ) : (
+                        <span className="text">Sending</span>
+                      )}
                     </button>
                   </div>
                 </div>

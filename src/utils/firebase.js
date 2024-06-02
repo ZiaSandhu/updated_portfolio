@@ -64,8 +64,8 @@ export async function downloadCv() {
 
       const link = document.createElement('a');
       link.href = url;
-      // link.setAttribute('target', '_blank'); 
-      link.setAttribute('download', 'ZiaUrRehman.pdf');
+      link.setAttribute('target', '_blank'); 
+      // link.setAttribute('download', 'ZiaUrRehman.pdf');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

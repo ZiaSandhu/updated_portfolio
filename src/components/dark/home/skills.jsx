@@ -12,7 +12,7 @@ function Skills() {
           <div className="sec-head md-mb80 wow fadeIn">
             <h6 className="sub-title opacity-7 mb-15">Skills</h6>
             <h3>
-              <span className="main-color">Awards</span> & Recognitions
+              <span className="main-color">Skills</span> & Expertise
             </h3>
           </div>
         </div>

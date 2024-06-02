@@ -1,19 +1,18 @@
-"use client";
 import ProgressScroll from "@/components/Common/ProgressScroll";
 import Cursor from "@/components/Common/cusor";
 import LoadingScreen from "@/components/Common/loader";
-import Blog from "@/components/dark/home/blog";
+// import Blog from "@/components/dark/home/blog";
 import ContactUs from "@/components/dark/contact/ContactUs";
 import Info from "@/components/dark/contact/info";
 import Footer from "@/components/dark/home/footer";
-import NavTop from "@/components/dark/home/nav-top";
+// import NavTop from "@/components/dark/home/nav-top";
 import Navbar from "@/components/dark/home/navbar";
 import Portfolio from "@/components/dark/home/portfolio";
-import Price from "@/components/dark/home/price";
+// import Price from "@/components/dark/home/price";
 import Profile from "@/components/dark/home/profile";
 import Services from "@/components/dark/home/services";
 import Skills from "@/components/dark/home/skills";
-import Testimonials from "@/components/dark/home/testimonials";
+// import Testimonials from "@/components/dark/home/testimonials";
 import Script from "next/script";
 function Dark() {
 
