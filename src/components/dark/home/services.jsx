@@ -13,8 +13,8 @@ function Services() {
           <div className="col-lg-6 text-center">
             <h6 className="sub-title opacity-7 mb-15">Services</h6>
             <h3>
-              Turn Information{' '}
-              <span className="main-color">Into Actionable</span> Insights
+            Transform your <br/>
+              <span className="main-color"> Ideas </span> into <span  className="main-color"> Impact</span>
             </h3>
           </div>
         </div>

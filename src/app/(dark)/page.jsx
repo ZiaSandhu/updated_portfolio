@@ -12,7 +12,7 @@ import Portfolio from "@/components/dark/home/portfolio";
 import Profile from "@/components/dark/home/profile";
 import Services from "@/components/dark/home/services";
 import Skills from "@/components/dark/home/skills";
-// import Testimonials from "@/components/dark/home/testimonials";
+import Testimonials from "@/components/dark/home/testimonials";
 import Script from "next/script";
 function Dark() {
 
@@ -33,7 +33,7 @@ function Dark() {
             <Services />
             <Skills />
             <Portfolio />
-            {/* <Testimonials /> */}
+            <Testimonials />
             {/* <Price /> */}
             <Info />
             {/* <Blog /> */}

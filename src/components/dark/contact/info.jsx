@@ -67,10 +67,9 @@ const [loading,setLoading] = useState(false)
         <div className="col-lg-5">
           <div className="sec-head md-mb80 wow fadeIn">
             <h6 className="sub-title mb-15 opacity-7">Get In Touch</h6>
-            <h2 className="fz-50">Let is make your brand brilliant!</h2>
+            <h2 className="fz-50">Let’s collaborate for extraordinary results!</h2>
             <p className="fz-15 mt-10">
-              If you would like to work with us or just want to get in touch,
-              we’d love to hear from you!
+              Got a question or proposal, or just want to say hello? Go ahead.
             </p>
             <div className="phone fz-30 fw-600 mt-30 underline">
               <a href="#0" className="main-color">

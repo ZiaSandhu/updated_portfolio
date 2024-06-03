@@ -12,8 +12,11 @@ function Portfolio() {
           <div className="col-lg-6">
             <h6 className="sub-title opacity-7 mb-15">Portfolio</h6>
             <h3>
-              Look at my work & <br /> give us{' '}
-              <span className="main-color">your feedback</span>
+              Look at my {' '}
+            <span className="main-color">work</span> {' '}
+              & <br /> share{' '}
+            
+              <span className="main-color">your thoughts.</span>
             </h3>
           </div>
           <div className="col-lg-6 valign">
