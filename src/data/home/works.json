@@ -1,15 +1,30 @@
 [
+  
   {
-    "thumbnail": "/assets/imgs/works/xapitx.png",
-    "title": "Xapitx",
-    "link": "https://xapitx.com",
-    "tag":"Next JS"
+    "thumbnail": "/assets/imgs/works/optima-crm.png",
+    "title": "Optima CRM",
+    "link": "https://my.optima-crm.com",
+    "tag": [
+      "ANGULAR",
+      "PHP",
+      "NODE"
+    ]
   },
   {
     "thumbnail": "/assets/imgs/works/livex.png",
     "title": "LiveX",
-    "link": "https://livex.tech;;",
-    "tag":"MERN"
+    "link": "https://livex.tech",
+    "tag":["Next JS","NODE","SQL"]
+  },
+  {
+    "thumbnail": "/assets/imgs/works/xapitx.png",
+    "title": "Xapitx",
+    "link": "https://xapitx.com",
+    "tag": [
+      "Next JS",
+      "NODE",
+      "MONGO"
+    ]
   }
   
 ]

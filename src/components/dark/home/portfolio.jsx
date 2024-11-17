@@ -52,7 +52,11 @@ function Portfolio() {
                 </div>
                 <div className="cont mt-30 d-flex align-items-center">
                   <div>
-                    <span className="tag">{item.tag}</span>
+                    <div className="d-flex justify-start gap-3">
+                    {
+                    item?.tag?.map((name,key) => (<span key={key} className="tag">{name}</span>))
+                    }
+                    </div>
                     <h6 className="line-height-1">
                     <a href={item.link} target="_blank">{item.title}</a>
                     </h6>

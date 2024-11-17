@@ -34,7 +34,7 @@ function LoadingScreen() {
           '-=1.5'
         );
       }
-    }, 10);
+    }, 100);
   }, []);
 
   return (
